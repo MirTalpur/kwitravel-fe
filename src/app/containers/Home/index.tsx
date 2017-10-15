@@ -27,10 +27,10 @@ class Home extends React.Component<any, any> {
             <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav navbar>
                 <NavItem>
-                  <NavLink className={style.navLink}href="/components/">Components</NavLink>
+                  <NavLink className={style.navLink} href="#works">How it works</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className={style.navLink} href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+                  <NavLink className={style.navLink} href="https://github.com/reactstrap/reactstrap">FAQ</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -53,6 +53,9 @@ class Home extends React.Component<any, any> {
                 </div>
             </div>
           </Container>
+        </div>
+        <div id="works">
+          <p>How it works?</p>
         </div>
       </div>
     );
