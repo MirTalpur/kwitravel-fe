@@ -1,3 +1,98 @@
+.heading {
+  color: white;
+}
 .Home {
   text-align: center;
+  /*display: flex;*/
+  /*background-image: url('../../../Webp.net-resizeimage.jpg');*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
+
+/*@media screen and (max-width: 768px) {
+    #mobileimg {
+        display: flex;
+        margin-top: 20px;
+    }
+}*/
+/*.jumbotron-fluid {
+    background-image: url(../../../Webp.net-resizeimage.jpg);
+}*/
+.container {
+  // text-align: left;
+}
+
+.flightInput {
+  float: none;
+  margin: 0 auto;
+}
+.jumbo {
+  /*height: 100vh;*/
+  min-height: 800px;
+  background-image: url('../../../Webp.net-resizeimage.jpg');
+  /*background-size: cover;*/
+  // height: 100%;
+  background-size: 100% 100%;
+  margin-bottom: 0px;
+  /*background-image: url(/images/background/xxx.jpg);*/
+  // background-size: cover;
+  background-repeat: no-repeat;
+  /*color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;*/
+  /*background-size: 100% 100%;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover;*/
+  /*background-repeat:no-repeat;*/
+  /*background-size:cover;*/
+}
+.bg-info {
+    background-color: none !important;
+}
+.navLink {
+  color: #DEDCD9;
+}
+@media (max-width: 575px) {
+  .nav {
+    padding: 0.5rem 1rem;
+  }
+  .navLink {
+    color: white;
+  }
+}
+@media (min-width: 576px) {
+  .nav {
+    padding-top: 0.5rem 1rem;
+    padding-top: 75px;
+    background-color: none !important;
+  }
+      a {
+      color: white;
+    }
+}
+/*@media (min-width: 453px) and (max-width: 504px){
+  .jumbo {
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 504px) {
+  .jumbo{
+    min-height: 460px;
+  }
+}
+
+@media (min-width: 517px) {
+  .jumbo{
+    min-height: 470px;
+  }
+}
+@media (min-width: 901px) and (max-width: 903px){
+  .jumbo {
+    height: 100%;
+    min-height: 800px;
+  }
+}*/
+/*.jumbotron {
+  background-color: red !important;
+}*/
