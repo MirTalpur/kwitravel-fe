@@ -19,27 +19,32 @@ class Home extends React.Component<any, any> {
   public render() {
     return (
       <div className={style.Home}>
-        <div className={style.jumbo}>
-                <div className={style.nav}>
+                        <div className={style.nav}>
         <Navbar  toggleable>
           <NavbarToggler right onClick={this.toggleNavbar} className="mr-3" />
-            <NavbarBrand href="/" className="mr-auto">kwitravel</NavbarBrand>
+            <NavbarBrand href="/" className={style.navBrand}>kwitravel</NavbarBrand>
             <Collapse isOpen={!this.state.collapsed} navbar>
-              <Nav navbar>
+              <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className={style.navLink} href="#works">How it works</NavLink>
+                  <NavLink className={style.navLinkOne} href="#works">How it works</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className={style.navLink} href="https://github.com/reactstrap/reactstrap">FAQ</NavLink>
+                  <NavLink className={style.navLinkOne} href="#inspirations">Inspirations</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className={style.navLinkSecond} href="https://github.com/reactstrap/reactstrap">FAQ</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
         </Navbar>
       </div>
+        <div className={style.jumbo}>
+
 
           <Container fluid={true}>
             <div className={style.container}>
-              <h1 className={style.heading}>You're picture perfect vacation starts here</h1>
+              <h1 className={style.heading}>You're picture perfect</h1>
+              <h1 className={style.headingTwo}>vacation starts here.</h1>
                 <div className="row">
                   <div className={style.flightInput}>
                     <Form className="form-horizontal">
