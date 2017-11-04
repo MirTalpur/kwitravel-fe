@@ -1,15 +1,26 @@
 import * as React from 'react';
-import { Link } from 'react-router';
+import { Navbar, NavbarToggler, NavbarBrand, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 
 const style = require('./style.css');
 
 export const Header = () => (
-  <nav className={style.Nav}>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="about">About</Link></li>
-      <li><Link to="counter">Counter</Link></li>
-      <li><Link to="stars">Stars</Link></li>
-    </ul>
-  </nav>
+  <div className={style.nav}>
+    <Navbar  toggleable>
+      <NavbarToggler right onClick={this.toggleNavbar} className="mr-3" />
+        <NavbarBrand href="/" className={style.navBrand}>kwitravel</NavbarBrand>
+        <Collapse isOpen={!this.state.collapsed} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink className={style.navLinkOne} href="#works">How it works</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className={style.navLinkOne} href="#inspirations">Inspirations</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className={style.navLinkSecond} href="https://github.com/reactstrap/reactstrap">FAQ</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+    </Navbar>
+  </div>
 );

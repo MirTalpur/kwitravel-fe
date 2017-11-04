@@ -1,15 +1,37 @@
-.Nav {
-  & ul {
-    list-style-type: none;
-    padding: 0;
+.navLink {
+  color: #DEDCD9;
+}
 
-    & li {
-      display: inline;
-      padding: 5px;
+a:hover {
+  color: white;
+}
 
-      & a {
-        color: #212121;
-      }
-    }
+.navBrand {
+  margin-right: auto !important;
+  margin-left: 75px;
+}
+
+@media (max-width: 575px) {
+  .nav {
+    padding: 0.5rem 1rem;
+  }
+  .navLink {
+    color: white;
+  }
+}
+@media (min-width: 576px) {
+  .nav {
+    padding-top: 0.5rem 1rem;
+    background-color: none !important;
+  }
+  a {
+    color: rgb(86, 85, 85) !important;
+  }
+  .navBrand {
+    margin-right: auto !important;
+    margin-left: 75px;
+  }
+  .navLinkSecond {
+    margin-right: 50px;
   }
 }
