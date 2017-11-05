@@ -5,17 +5,8 @@ import { Header } from 'components';
 class Home extends React.Component<any, any> {
   public constructor(props) {
     super(props);
+  }
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
-  public toggleNavbar() {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
   public render() {
     return (
       <div className={style.Home}>
